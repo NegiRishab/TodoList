@@ -8,9 +8,7 @@ export default function FormList(props) {
   const [newTitle, setnewTitle] = useState("");
 
   const { id } = props;
-  {
-    console.log(id);
-  }
+
 
   async function handleUpdate() {
     const response = await fetch(
