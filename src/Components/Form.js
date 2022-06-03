@@ -30,7 +30,7 @@ export default function Form(props) {
             value={newTask}
             onChange={handlenewTask}
           />
-          <Button type="submit">Add Task</Button>
+          <button type="submit">Add Task</button>
          
         </form>
      
