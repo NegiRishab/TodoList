@@ -1,0 +1,59 @@
+body {
+ background-color: gray;
+}
+
+
+.button{
+    width: 500px;
+    margin: 189px 0px 0px 678px;
+    height: 113px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    background: #4f005f;
+    cursor: pointer;
+    color: white;
+   
+   }
+   .button:hover,
+   .button:active {
+     background: #741188;
+     border-color: #741188;
+   }
+   
+   .button:focus {
+     outline: none;
+   }
+
+   .input {
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 40rem;
+  }
+  
+  .input label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input input {
+    font: inherit;
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 0.15rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input input:focus {
+    outline: none;
+    border-color: #4f005f;
+  }
+  .updatebuton{
+    background-color: lightblue;
+  }
+  
+  
