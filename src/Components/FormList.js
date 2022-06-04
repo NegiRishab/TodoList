@@ -8,11 +8,13 @@ export default function FormList(props) {
   const [newTitle, setnewTitle] = useState("");
 
   const { id } = props;
+  // console.log(id);
+
 
 
   async function handleUpdate() {
     const response = await fetch(
-      `https://jsonplaceholder.typicode.com/posts/1`,
+      `https://jsonplaceholder.typicode.com/posts/${id}`,
       {
         method: "PUT",
         body: JSON.stringify({
@@ -24,12 +26,15 @@ export default function FormList(props) {
         headers: {
           "Content-type": "application/json; charset=UTF-8",
         },
-      }
-    );
+      });
+    // ).then((response)=>console.log(response.json())).catch((error)=>console.log(error.message))
     const data = response.json();
     console.log("updated", data);
     setupdate(false);
   }
+
+
+
 
   const handleinput = (event) => {
     setnewTitle(event.target.value);
